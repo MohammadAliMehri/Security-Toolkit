@@ -70,7 +70,7 @@ setup_shells() {
 # Initial system update and package installation
 echo "Updating and installing packages..."
 sudo apt update > /dev/null 2>&1
-sudo apt install -y python3.12-venv golang git wget curl jq nmap nikto sqlmap zsh dirsearch wfuzz crunch micro make > /dev/null 2>&1
+sudo apt install -y python3.13-venv golang git wget curl jq nmap nikto sqlmap zsh dirsearch wfuzz crunch micro make > /dev/null 2>&1
 
 # Python virtual environment setup
 echo "Creating and activating Python virtual environment..."
