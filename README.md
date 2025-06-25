@@ -23,8 +23,8 @@ A bash script for setting up a powerful security toolkit on a fresh Linux system
 1. Clone the repository:
 
 ```bash
- git clone https://github.com/MohammadAliMehri/Scripts.git
- cd Scripts
+ https://github.com/MohammadAliMehri/Security-Toolkit.git
+ cd Security-Toolkit
 ```
 
 2. Make the script executable:
