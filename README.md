@@ -14,7 +14,7 @@ A bash script for setting up a powerful security toolkit on a fresh Linux system
 
 - **Recon Tools:** subfinder, assetfinder, waybackurls, gau
 - **Scanning Tools:** nmap, naabu, nuclei, httpx
-- **Exploitation Tools:** sqlmap, XSStrike, dalfox
+- **Exploitation Tools:** sqlmap, Ghauri, XSStrike, dalfox
 - **Wordlists & Payloads:** SecLists, XSS payloads
 - **Other Utilities:** wfuzz, hakrawler, paramspider, massdns
 
