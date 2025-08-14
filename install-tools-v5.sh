@@ -20,7 +20,7 @@ setup_shell_config() {
     if [ -f "$config_file" ]; then
         if ! grep -q 'export PATH=$PATH:$(go env GOPATH)/bin' "$config_file"; then
             echo 'export PATH=$PATH:$(go env GOPATH)/bin' >> "$config_file"
-            echo "Added Go binaries to $shell_type PATH"
+            echo "Added Go binaries to $shell_type PATH"  
         fi
     fi
 }
@@ -201,6 +201,19 @@ if [ ! -d ~/sqlmap ]; then
     git clone --depth 1 https://github.com/sqlmapproject/sqlmap.git ~/sqlmap > /dev/null 2>&1
 else
     echo "sqlmap is already installed."
+fi
+
+# Install Ghauri for SQL injection testing
+if [ ! -d ~/ghauri ]; then
+    echo "Cloning Ghauri repository..."
+    git clone https://github.com/r0oth3x49/ghauri.git ~/ghauri > /dev/null 2>&1
+    cd ~/ghauri
+    echo "Installing Python dependencies for Ghauri..."
+    pip install --upgrade -r requirements.txt > /dev/null 2>&1
+    python setup.py install > /dev/null 2>&1
+    cd ..
+else
+    echo "Ghauri is already installed."
 fi
 
 # Install GF patterns for pattern matching
